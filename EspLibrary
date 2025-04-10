@@ -63,7 +63,9 @@ function create(item)
     if item then
         local newH = Instance.new("Highlight", item) 
         newH.Name = HttpService:GenerateGUID(false)
-        
+        newH.Enabled = true
+        newH.FillTransparency = 0.5
+        newH.DepthMode = "AlwaysOnTop"
     end
 end
 
